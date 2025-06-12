@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Internship Exam | [Your Company Name]</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .company-logo {
+            max-height: 80px;
+            margin-bottom: 15px;
+        }
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .question-text {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .options label {
+            display: block;
+            margin: 8px 0;
+            cursor: pointer;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 30px auto 0;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .timer {
+            text-align: right;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="company-logo.png" alt="Company Logo" class="company-logo">
+            <h1>Cloud Computing Internship Selection Exam</h1>
+            <p>Time limit: 20 minutes | 10 multiple-choice questions</p>
+        </header>
+
+        <div class="timer">Time remaining: <span id="time">20:00</span></div>
+
+        <form id="examForm">
+            <div class="question">
+                <div class="question-text">1. Which of the following is NOT a cloud service model?</div>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> A. Infrastructure as a Service (IaaS)</label>
+                    <label><input type="radio" name="q1" value="b"> B. Platform as a Service (PaaS)</label>
+                    <label><input type="radio" name="q1" value="c"> C. Software as a Service (SaaS)</label>
+                    <label><input type="radio" name="q1" value="d"> D. Hardware as a Service (HaaS)</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question-text">2. What is the main advantage of auto-scaling in cloud computing?</div>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> A. It reduces the need for all monitoring</label>
+                    <label><input type="radio" name="q2" value="b"> B. It automatically adjusts resources based on demand</label>
+                    <label><input type="radio" name="q2" value="c"> C. It eliminates the need for load balancers</label>
+                    <label><input type="radio" name="q2" value="d"> D. It guarantees 100% uptime</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question-text">3. Which cloud deployment model would a company choose if they want exclusive use by a single organization?</div>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> A. Public cloud</label>
+                    <label><input type="radio" name="q3" value="b"> B. Private cloud</label>
+                    <label><input type="radio" name="q3" value="c"> C. Hybrid cloud</label>
+                    <label><input type="radio" name="q3" value="d"> D. Community cloud</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question-text">4. What does "multi-tenancy" refer to in cloud computing?</div>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> A. Running multiple operating systems on a single server</label>
+                    <label><input type="radio" name="q4" value="b"> B. A single instance of software serving multiple customers</label>
+                    <label><input type="radio" name="q4" value="c"> C. Using multiple cloud providers simultaneously</label>
+                    <label><input type="radio" name="q4" value="d"> D. Having multiple data centers in different locations</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question-text">5. Which of these is a characteristic of cloud computing?</div>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> A. On-demand self-service</label>
+                    <label><input type="radio" name="q5" value="b"> B. Limited scalability</label>
+                    <label><input type="radio" name="q5" value="c"> C. Location-dependent access</label>
+                    <label><input type="radio" name="q5" value="d"> D. Permanent resource allocation</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question-text">6. What is the purpose of a CDN in cloud architecture?</div>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="a"> A. To store database backups</label>
+                    <label><input type="radio" name="q6" value="b"> B. To distribute content to users from geographically closer servers</label>
+                    <label><input type="radio" name="q6" value="c"> C. To encrypt all data transmissions</label>
+                    <label><input type="radio" name="q6" value="d"> D. To manage virtual machine instances</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question-text">7. Which AWS service provides object storage?</div>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="a"> A. Amazon EC2</label>
+                    <label><input type="radio" name="q7" value="b"> B. Amazon S3</label>
+                    <label><input type="radio" name="q7" value="c"> C. Amazon RDS</label>
+                    <label><input type="radio" name="q7" value="d"> D. Amazon VPC</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question-text">8. What is the primary benefit of serverless computing?</div>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="a"> A. Developers don't need to manage servers</label>
+                    <label><input type="radio" name="q8" value="b"> B. It's always cheaper than traditional computing</label>
+                    <label><input type="radio" name="q8" value="c"> C. It provides better performance than virtual machines</label>
+                    <label><input type="radio" name="q8" value="d"> D. It eliminates the need for all operational staff</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question-text">9. Which of these is NOT a common cloud security concern?</div>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="a"> A. Data breaches</label>
+                    <label><input type="radio" name="q9" value="b"> B. Insider threats</label>
+                    <label><input type="radio" name="q9" value="c"> C. Hardware failures</label>
+                    <label><input type="radio" name="q9" value="d"> D. Insecure APIs</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question-text">10. What does "vertical scaling" mean in cloud computing?</div>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="a"> A. Adding more servers to a system</label>
+                    <label><input type="radio" name="q10" value="b"> B. Increasing the capacity of existing servers</label>
+                    <label><input type="radio" name="q10" value="c"> C. Distributing workload across multiple regions</label>
+                    <label><input type="radio" name="q10" value="d"> D. Moving workloads between cloud providers</label>
+                </div>
+            </div>
+
+            <button type="submit">Submit Exam</button>
+        </form>
+
+        <footer>
+            &copy; 2023 [Your Company Name]. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        // Timer functionality
+        let timeLeft = 20 * 60; // 20 minutes in seconds
+        const timer = document.getElementById('time');
+        
+        function updateTimer() {
+            const minutes = Math.floor(timeLeft / 60);
+            let seconds = timeLeft % 60;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            timer.textContent = `${minutes}:${seconds}`;
+            
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                document.getElementById('examForm').submit();
+            } else {
+                timeLeft--;
+            }
+        }
+        
+        const timerInterval = setInterval(updateTimer, 1000);
+        
+        // Form submission
+        document.getElementById('examForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Count answered questions
+            const answered = document.querySelectorAll('input[type="radio"]:checked').length;
+            
+            if (answered < 10) {
+                if (confirm(`You've only answered ${answered} out of 10 questions. Are you sure you want to submit?`)) {
+                    submitExam();
+                }
+            } else {
+                submitExam();
+            }
+        });
+        
+        function submitExam() {
+            clearInterval(timerInterval);
+            alert('Exam submitted successfully! Thank you for your participation.');
+            // In a real implementation, you would send the data to your server here
+            // For this example, we'll just show the answers in the console
+            const formData = new FormData(document.getElementById('examForm'));
+            const answers = {};
+            formData.forEach((value, key) => {
+                answers[key] = value;
+            });
+            console.log('User answers:', answers);
+            
+            // Redirect or show results as needed
+        }
+    </script>
+</body>
+</html>
